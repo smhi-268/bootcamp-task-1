@@ -62,10 +62,6 @@ body {
   font-family: Vazirmatn;
 }
 
-btn-container {
-  display: block;
-}
-
 .request__heding {
   color: var(--color-primary);
   font-size: 2.2rem;
