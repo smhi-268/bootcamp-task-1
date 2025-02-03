@@ -108,7 +108,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* margin-bottom: 0.5rem; */
 }
 .info__header {
   color: var(--color-primary);
