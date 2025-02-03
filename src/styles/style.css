@@ -1,0 +1,163 @@
+@import url(fonts.css);
+
+/* RESET */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* root variable */
+
+:root {
+  --color-header: #234894;
+  --color-primary: #1e1e1e;
+  --color-secondary: #696969;
+  --color-btn: #219f95;
+  --color-white: #ffffff;
+  --color-number: #afcedd;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Vazirmatn;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.btn--number {
+  background-color: var(--color-number);
+  color: var(--color-header);
+  font-size: 1.8rem;
+  border-radius: 6px;
+  padding: 0.3rem 1rem;
+}
+
+.btn--request {
+  background-color: var(--color-btn);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  font-family: Vazirmatn;
+}
+
+btn-container {
+  display: block;
+}
+
+.request__heding {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  margin: 3rem 0 8rem 0;
+  text-align: center;
+}
+
+.request {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+.request__box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__number {
+  margin-left: 1rem;
+}
+.header__title {
+  color: var(--color-header);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header__date {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin-bottom: 0.5rem; */
+}
+.info__header {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.info p {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.personal {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal__brand {
+  display: flex;
+  align-items: center;
+}
+
+.personal__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+.personal__name {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .request {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .request {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .request__heding {
+    text-align: right;
+  }
+}
